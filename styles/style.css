@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*:root {
+	/* Primary */
+	--Red: hsl(0, 78%, 62%);
+	--Cyan: hsl(180, 62%, 55%);
+	--Orange: hsl(34, 97%, 64%);
+	--Blue: hsl(212, 86%, 64%);
+
+	/* Netural */
+
+	--very-dark-blue: hsl(234, 12%, 34%);
+	--grayish-blue: hsl(229, 6%, 66%);
+	--very-light-gray: hsl(0, 0%, 98%);	
+
+	font-family: "Poppins", "Serif";
+
+	--light-weight: 200;
+	--medium-weight: 400;
+	--heavey-weight: 700;
+
+}
+
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #ddd;
+}
+
+.main_container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--very-light-gray);
+	box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+	border-radius: 3px;
+}
+
+.cards{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0;
+}
+.card{
+	width: 250px;
+	height: 40%;
+	box-shadow: 4px 3px 9px 1px rgba(0,0,0,0.1), -2px 0px 9px 1px rgba(0,0,0,0.1);
+	margin: 1.9rem 1.1rem;
+	padding: 0 2rem 0.5rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	border-radius: 6.5px;
+}
+
+.main_container .middleCards{
+	height: 90%;
+}
+
+.main_container .main_heading{
+	margin: 3rem 0 0 0;
+	font-size: 2.1rem;
+	font-weight: var(--light-weight);
+	color: var(--grayish-blue);
+
+}
+
+.main_container .main_comma{
+	font-family: serif;
+	font-size: 1.5rem
+}
+
+.main_container .main_subHeading{
+	margin: 0;
+	font-size: 2.1rem;
+	line-height: 1.3;
+	font-weight: var(--heavey-weight);
+	font-family: "Poppins";
+	color: var(--very-dark-blue);
+}
+
+.main_container .main_text{
+	color: var(--grayish-blue);
+	/*margin:0.7rem 2rem 0 2rem;*/
+	font-size: 0.8rem;
+	font-weight: var(--medium-weight);
+	width: 40%;
+	text-align: center;
+
+}
+.card img{
+	align-self: flex-end;
+	margin-top: 1.1rem;
+}
+
+.card .card_heading{
+	margin: 0;
+	font-size: 1.1rem;
+	color: var(--very-dark-blue);
+}
+
+.card .card_text{
+	margin: 0.2rem 0 0 0;
+	font-size: 0.8rem;
+	color: var(--grayish-blue);
+}
+
+
+.main_container .cards .first_card{
+	border-top: 4px solid var(--Cyan);
+}
+
+.main_container .cards .second_card{
+	border-top: 4px solid var(--Red);
+	margin-top: 0;
+	/*height: 40%;*/
+}
+
+.main_container .cards .third_card{
+	border-top: 4px solid var(--Orange);
+	margin-bottom: 0;
+	/*height: 35%;*/
+}
+
+.main_container .cards .forth_card{
+	border-top: 4px solid var(--Blue);
+}
